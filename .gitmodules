@@ -1,3 +1,6 @@
 [submodule "modules/MMM-Voice-Control"]
 	path = modules/MMM-Voice-Control
 	url = git@github.com:tushardhadiwal/MMM-Voice-Control.git
+[submodule "modules/MMM-RTSPStream"]
+	path = modules/MMM-RTSPStream
+	url = git@github.com:tushardhadiwal/MMM-RTSPStream.git
