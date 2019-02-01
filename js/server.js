@@ -7,13 +7,18 @@
 
 var express = require("express");
 var app = require("express")();
-var server = require("http").Server(app);
+//var server = require("http").Server(app);
 var io = require("socket.io")(server);
 var path = require("path");
 var ipfilter = require("express-ipfilter").IpFilter;
 var fs = require("fs");
 var helmet = require("helmet");
 var Utils = require(__dirname + "/utils.js");
+var options = {    key: fs.readFileSync(path.join(__dirname, "/key.pem")),
+    cert: fs.readFileSync(path.join(__dirname, "/cert.pem"))
+}
+var server = require("https").Server(options, app);
+var io = require("socket.io")(server);
 
 var Server = function(config, callback) {
 
