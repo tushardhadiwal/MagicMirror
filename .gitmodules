@@ -4,3 +4,6 @@
 [submodule "modules/MMM-RTSPStream"]
 	path = modules/MMM-RTSPStream
 	url = git@github.com:tushardhadiwal/MMM-RTSPStream.git
+[submodule "modules/MMM-iFrame"]
+	path = modules/MMM-iFrame
+	url = git@github.com:tushardhadiwal/MMM-iFrame.git
